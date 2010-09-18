@@ -1,0 +1,63 @@
+<p>
+  <b>Title:</b>
+  <%=h @subject.title %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @subject.user_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= RedCloth.new(@subject.description).to_html %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @subject.body %>
+</p>
+
+<p>
+  <b>What:</b>
+  <%=h @subject.what %>
+</p>
+
+<p>
+  <b>Tell of:</b>
+  <%=h @subject.tell_of %>
+</p>
+
+<p>
+  <b>How:</b>
+  <%=h @subject.how %>
+</p>
+
+<p>
+  <b>Advantage:</b>
+  <%=h @subject.advantage %>
+</p>
+
+<p>
+  <b>Notice:</b>
+  <%=h @subject.notice %>
+</p>
+
+<p>
+  <b>Expert:</b>
+  <%=h @subject.expert %>
+</p>
+
+<p>
+  <b>Cases:</b>
+  <%=h @subject.cases %>
+</p>
+
+<p>
+  <b>Commend:</b>
+  <%=h @subject.commend %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_subject_path(@subject) %> |
+<%= link_to 'Back', admin_subjects_path %>

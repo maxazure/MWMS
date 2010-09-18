@@ -1,0 +1,24 @@
+<h1>Editing keyword</h1>
+
+<% form_for(@keyword,:url=>{:action => 'update'}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :word %><br />
+    <%= f.text_field :word %>
+  </p>
+  <p>
+    <%= f.label :rank %><br />
+    <%= f.text_field :rank %>
+  </p>
+  <p>
+    <%= f.label :catalog_id %><br />
+    <%= f.text_field :catalog_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @keyword %> |
+<%= link_to 'Back', admin_keywords_path %>

@@ -1,0 +1,21 @@
+<h1>我的专题列表</h1>
+
+<table>
+  <tr>
+    <th>专题名称</th>
+    <th>操作</th>
+  </tr>
+
+<% @subjects.each do |subject| %>
+  <tr>
+    <td><%=h subject.id %>.<%= link_to subject.title, subject %></td>
+   
+    <td><%= link_to 'Edit', edit_admin_subject_path(subject) %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '新建专题', new_admin_subject_path %>

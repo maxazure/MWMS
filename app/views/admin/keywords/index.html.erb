@@ -1,0 +1,23 @@
+<h1>Listing keywords</h1>
+
+<table>
+  <tr>
+    <th>Word</th>
+    <th>Rank</th>
+  </tr>
+
+<% @keywords.each do |keyword| %>
+  <tr>
+    <td><%=h keyword.word %></td>
+    <td><%=h keyword.rank %></td>
+    <td><%= link_to 'Show', keyword %></td>
+    <td><%= link_to 'Edit', edit_admin_keyword_path(keyword) %></td>
+    <td><%= link_to 'Destroy', keyword, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= will_paginate @keywords %>
+<br />
+<%= link_to 'New keyword', new_admin_keyword_path %>

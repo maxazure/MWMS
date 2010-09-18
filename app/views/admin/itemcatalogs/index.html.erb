@@ -1,0 +1,25 @@
+<h1>分类列表</h1>
+
+<table>
+  <tr>
+    <th>名字</th>
+    
+    <th>专家</th>
+    <th>操作</th>
+  </tr>
+
+<% @itemcatalogs.each do |itemcatalog| %>
+  <tr>
+    <td><%=h itemcatalog.name %>
+    <%=h "(#{itemcatalog.other_name})"  %></td>
+    <td><%=h itemcatalog.expert_id %></td>
+    <td>
+    <%= link_to '编辑', edit_admin_itemcatalog_path(itemcatalog) %> | 
+    <%= link_to '删除', [:admin,itemcatalog], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '新增分类', new_admin_itemcatalog_path %>

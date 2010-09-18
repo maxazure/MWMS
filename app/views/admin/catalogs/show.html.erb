@@ -1,0 +1,21 @@
+<p>
+  <b>分类名:</b>
+  <%=h @catalog.sort_name %>
+  <%= link_to '重命名', edit_admin_catalog_path(@catalog) %> |
+  <%= link_to '返回首页', admin_catalogs_path %>
+</p>
+
+<h2>批量添加关键词</h2>
+<div>
+	<% form_for [:admin,@catalog, Keyword.new] do |f|%>
+	 <p><%= f.text_area :word %></p>
+	 <%= f.submit "添加"%>
+	<% end %>
+</div>
+
+<ul>
+<%= render :partial => @keywords %>
+<%= will_paginate @keywords %>
+</ul>
+
+

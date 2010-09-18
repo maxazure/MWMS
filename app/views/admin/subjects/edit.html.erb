@@ -1,0 +1,60 @@
+<h1>
+	修改专题
+</h1>
+
+<% form_for(@subject, :url=>{:action => 'update'}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+   专题标题<br />
+    <%= f.text_field :title ,:size => 70%>
+  </p>
+  <p>
+    专家<br />
+    <%= f.text_field :expert ,:size => 70%>
+  </p>
+  <p>
+	
+    摘要<br />
+    <%= f.text_area :description ,:size => '60x10'%>
+  </p>
+  <p>
+   正文<br />
+    <%= f.text_area :body ,:size => '60x10'%>
+  </p>
+  <p>
+    什么是<br />
+    <%= f.text_area :what ,:size => '60x10'%>
+  </p>
+  <p>
+    讲述<br />
+    <%= f.text_area :tell_of ,:size => '60x10'%>
+  </p>
+  <p>
+    原理<br />
+    <%= f.text_area :how ,:size => '60x10'%>
+  </p>
+  <p>
+    优势<br />
+    <%= f.text_area :advantage ,:size => '60x10'%>
+  </p>
+  <p>
+    注意<br />
+    <%= f.text_area :notice ,:size => '60x10'%>
+  </p>
+
+  <p>
+   案例<br />
+    <%= f.text_area :cases ,:size => '60x10'%>
+  </p>
+  <p>
+    推荐文章<br />
+    <%= f.text_area :commend ,:size => '60x10'%>
+  </p>
+  <p>
+    <%= f.submit '修改' %>
+  </p>
+<% end %>
+
+<%= link_to '预览', @subject %> |
+<%= link_to '返回首页', admin_subjects_path %>

@@ -1,0 +1,13 @@
+<h1>登录</h1>
+<% form_tag do %>
+<p>
+	<label for="name">用户:</label>
+	<%= text_field_tag :name, params[:name] %>
+</p>
+<p>
+	<label for="password">密码:</label>
+	<%= password_field_tag :password, params[:password] %>
+</p>
+<p><%= submit_tag "立刻登录"%></p>
+
+<% end %>

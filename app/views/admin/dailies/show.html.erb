@@ -1,0 +1,13 @@
+<p>
+  <b>Empid:</b>
+  <%=h @daily.empid %>
+</p>
+
+<p>
+  <b>Daily text:</b>
+  <%=h @daily.daily_text %>
+</p>
+
+
+<%= link_to 'Edit', edit_daily_path(@daily) %> |
+<%= link_to 'Back', dailies_path %>

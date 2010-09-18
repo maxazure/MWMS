@@ -1,0 +1,34 @@
+<h1>编辑项目内容</h1>
+<p>
+<%= link_to '预览专题', "/zhengxing/#{@itemcontent.pagename}" %>
+</p>
+<% form_for([:admin,@itemcontent]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    项目名称<br />
+    <%= f.text_field :title %>
+  </p>
+ <p>
+    项目Url地址(例如:假体隆胸 就填写 jiatilongxiong)<br />
+    <%= f.text_field :pagename  %>
+  </p>
+  <p>
+    项目摘要<br />
+    <%= f.text_area :summary ,:size=>"80x5"%>
+  </p>
+  <p>
+    专家讲述<br />
+    <%= f.text_area :tell_of,:size=>"80x5" %>
+  </p>
+  <p>
+    正文<br />
+    <%= f.text_area :body,:size=>"80x30" %>
+  </p>
+  <p>
+    <%= f.submit '更新' %>
+  </p>
+<% end %>
+
+
+<%= link_to '取消并返回', admin_itemcontents_path %>

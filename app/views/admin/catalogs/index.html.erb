@@ -1,0 +1,19 @@
+<h1>关键词分类:列表</h1>
+
+<table>
+  <tr>
+    <th>分类名</th>
+    <th>操作</th>
+  </tr>
+
+<% @catalogs.each do |catalog| %>
+  <tr>
+    <td><%=h catalog.sort_name %>(<%=h catalog.keywords.count %>)</td>
+    <td><%= link_to '添加关键词', admin_catalog_path(catalog) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '添加新分类', new_admin_catalog_path %>

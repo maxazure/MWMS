@@ -1,0 +1,40 @@
+<h1>Listing experts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Job</th>
+    <th>Qq</th>
+    <th>Email</th>
+    <th>Thumbnail</th>
+    <th>Smallphoto</th>
+    <th>Middlephoto</th>
+    <th>Largephoto</th>
+    <th>Record</th>
+    <th>Content url</th>
+    <th>User</th>
+  </tr>
+
+<% @experts.each do |expert| %>
+  <tr>
+    <td><%=h expert.name %></td>
+    <td><%=h expert.job %></td>
+    <td><%=h expert.qq %></td>
+    <td><%=h expert.email %></td>
+    <td><%=h expert.thumbnail %></td>
+    <td><%=h expert.smallphoto %></td>
+    <td><%=h expert.middlephoto %></td>
+    <td><%=h expert.largephoto %></td>
+    <td><%=h expert.record %></td>
+    <td><%=h expert.content_url %></td>
+    <td><%=h expert.user_id %></td>
+    <td><%= link_to 'Show', expert %></td>
+    <td><%= link_to 'Edit', edit_expert_path(expert) %></td>
+    <td><%= link_to 'Destroy', expert, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New expert', new_expert_path %>

@@ -1,0 +1,28 @@
+<h1>修改分类</h1>
+
+<% form_for([:admin,@itemcatalog]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    分类名称<br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    别名<br />
+    <%= f.text_field :other_name %>
+  </p>
+  <p>
+   分类小图<br />
+    <%= f.text_field :itemcatalog_pic %>
+  </p>
+  <p>
+    专家ID<br />
+    <%= f.text_field :expert_id %>
+  </p>
+
+  <p>
+    <%= f.submit '保存' %>
+  </p>
+<% end %>
+
+<%= link_to '返回', admin_itemcatalogs_path %>

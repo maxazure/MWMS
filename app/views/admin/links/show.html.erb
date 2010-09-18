@@ -1,0 +1,23 @@
+<p>
+  <b>Link url:</b>
+  <%=h @link.link_url %>
+</p>
+
+<p>
+  <b>Domain:</b>
+  <%=h @link.domain %>
+</p>
+
+<p>
+  <b>Sh:</b>
+  <%=h @link.sh %>
+</p>
+
+<p>
+  <b>Is curl:</b>
+  <%=h @link.is_curl %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>

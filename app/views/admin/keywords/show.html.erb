@@ -1,0 +1,13 @@
+<p>
+  <b>Word:</b>
+  <%=h @keyword.word %>
+</p>
+
+<p>
+  <b>Rank:</b>
+  <%=h @keyword.rank %>
+</p>
+
+
+<%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+<%= link_to 'Back', keywords_path %>

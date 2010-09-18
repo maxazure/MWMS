@@ -1,0 +1,27 @@
+<h1>New link</h1>
+
+<% form_for(@link) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :link_url %><br />
+    <%= f.text_field :link_url %>
+  </p>
+  <p>
+    <%= f.label :domain %><br />
+    <%= f.text_field :domain %>
+  </p>
+  <p>
+    <%= f.label :sh %><br />
+    <%= f.text_field :sh %>
+  </p>
+  <p>
+    <%= f.label :is_curl %><br />
+    <%= f.text_field :is_curl %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', links_path %>
