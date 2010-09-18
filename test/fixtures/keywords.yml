@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  word: 隆鼻的
+  rank: 1
+  catalog_id: 1
+
+two:
+  word: 驼峰鼻
+  rank: 1
+  catalog_id: 1

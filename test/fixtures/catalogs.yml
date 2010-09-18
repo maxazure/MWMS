@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sort_name: 隆鼻
+  remark: 鼻部综合整形
+
+two:
+  sort_name: 隆胸
+  remark: 胸部综合整形

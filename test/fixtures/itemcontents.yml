@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  item_type: 1
+  summary: MyText
+  expert_id: 1
+  tell_of: MyText
+  user_id: 1
+  catalog_id: 1
+  click_counts: 1
+
+two:
+  title: MyString
+  item_type: 1
+  summary: MyText
+  expert_id: 1
+  tell_of: MyText
+  user_id: 1
+  catalog_id: 1
+  click_counts: 1

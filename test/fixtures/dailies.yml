@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  empid: 1
+  daily_text: 这是很简单的事情，在你的action代码里面取request.subdomains，判断是www.xxx.com，还是yyy.xxx.com，如果是www开头，说明访问主站，那么显示主站相应内容，如果是yyy，那么查数据库，看有没有用户是符合这个二级域名的，如果有，那么显示该用户博客相应页面，否则返回无此页面的提示。
+
+two:
+  empid: 1
+  daily_text: 昨晚燕子在群里(燕子讓我多推廣我們群)問我有沒有關于rails學習的常用技術列表,我發現不知道怎么回答...然后他貼了份Hooopo發給他的給我看....看了下(其實只有標題),發現自己不能自已的想去擴充它...具體做法就是在每一項下面,加上一些快速應用指南..于是有了這個貼..(BTW,這個貼里只是個人看法,某些貼你覺得沒用,不看便是...請勿罵車車..) 

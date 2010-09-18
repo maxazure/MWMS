@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  user_id: 1
+  description: MyText
+  body: MyText
+  what: MyText
+  tell_of: MyText
+  how: MyText
+  advantage: MyText
+  notice: MyText
+  expert: MyString
+  cases: MyText
+  commend: MyText
+
+two:
+  title: MyString
+  user_id: 1
+  description: MyText
+  body: MyText
+  what: MyText
+  tell_of: MyText
+  how: MyText
+  advantage: MyText
+  notice: MyText
+  expert: MyString
+  cases: MyText
+  commend: MyText
